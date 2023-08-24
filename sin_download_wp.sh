@@ -13,7 +13,7 @@ if [ -d /home/$usn/ ]; then
 	unzip /home/$usn/public_html/wordpress-$wpv.zip -d /home/$usn/public_html/
 	chown $usn:$usn /home/$usn/public_html/* -R
 	mv -f /home/$usn/public_html/wordpress/* /home/$usn/public_html
-	rm -rf wordpress wordpress-$wpv.zip
+	rm -rf /home/$usn/public_html/wordpress /home/$usn/public_html/wordpress-$wpv.zip
 	
 else
 	echo -e "\nThe user was not exist in server !"
